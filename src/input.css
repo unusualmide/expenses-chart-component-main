@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: 'DM Sans', sans-serif;
+      
+    }
+}
+
+@layer components{
+    .mondayAnim{
+        animation: mondayAnim 1s ease 0s 1 normal forwards;
+    }
+
+    @keyframes mondayAnim {
+        0% {
+            opacity: 0;
+            transform: translateY(2px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .backAnim{
+        animation: backAnim 1s ease 0s 1 normal forwards;
+    }
+
+    @keyframes backAnim {
+        0% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 0;
+        }
+    }
+}
